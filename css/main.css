@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #01a3a4;
+}
+
+.wrapper {
+    margin-top: 30vh;
+}
+
+button {
+    width: 10vw;
+    height: 10vh;
+    border-radius: 10px;
+    border: solid 2px;
+    margin: 1em;
+}
+
+#storyOutput{
+    font-size: 2em;
+    
+}
+#btn1 {
+    background-color: #a163a2;
+}
+
+#btn2 {
+    background-color: #3b9dca;
+}
+
+#btn3 {
+    background-color: #85a053;
+}
+
+#btn4 {
+    background-color: #e28c41;
+}
+
+#btn5 {
+    background-color: #ea78ab;
+}
+
