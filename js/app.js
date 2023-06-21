@@ -1,5 +1,6 @@
 // Assignment 1 | COMP1073 Client-Side JavaScript
-
+/* Jenna Deamer - 200529678
+Daniel Yevtushenko - 200528781 */
 /* Variables
 -------------------------------------------------- */
 // Create a new speechSynthesis object
@@ -10,6 +11,9 @@ const buttons = document.getElementsByClassName("butts");
 const clearButton = document.querySelector("#clearbtn");
 
 let textToSpeak = "";
+
+//css button vars
+const cssButtons = document.getElementsByClassName("butts");
 
 /* Functions
 -------------------------------------------------- */
@@ -110,6 +114,27 @@ for (var i = 0; i < buttons.length; i++) {
     buttons[i].addEventListener("click", createButtonEventListener(i));
 }
 
+//css button effects
+for (var i = 0; i < cssButtons.length; i++) {
+    cssButtons[i].addEventListener('mouseenter', function () {
+        this.style.backgroundColor = '#f5f242';
+        this.style.width = '60%';
+        this.style.height = '80%';
+        this.style.fontSize = '4.5em';
+        this.style.boxShadow = '#f5f242 0px 0px 100px 0px';
+    });
+
+
+    // CSS button effects off
+    cssButtons[i].addEventListener('mouseleave', function () {
+        this.style.backgroundColor = '';
+        this.style.width = '';
+        this.style.height = '';
+        this.style.fontSize = '';
+        this.style.boxShadow = '';
+    });
+}
+
 function createButtonEventListener(index) {
     return function () {
         if (isFirstClick[index]) {
@@ -118,6 +143,8 @@ function createButtonEventListener(index) {
             track[index] = (track[index] + 1) % getArrayLength(index);
         }
         text[index] = getColumnValue(index, track[index]);
+        textToSpeak = text.filter(Boolean).join(" ");
+        storyOutput.textContent = textToSpeak;
         speakNow(text[index]);
     };
 }

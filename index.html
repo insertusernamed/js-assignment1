@@ -1,34 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
-        <link rel="stylesheet" href="css/normalize.css" />
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
 
-    <body>
-        <div class="wrapper">
-            <div class="column">
-                <button id="btn1" class="butts">1</button>
-            </div>
-            <div class="column"><button id="btn2" class="butts">2</button></div>
-            <div class="column"><button id="btn3" class="butts">3</button></div>
-            <div class="column"><button id="btn4" class="butts">4</button></div>
-            <div class="column"><button id="btn5" class="butts">5</button></div>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1 | COMP1073 Client-Side JavaScript</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="column">
+            <button id="btn1" class="butts">1</button>
         </div>
-        <img src="/img/wave1.svg" alt="bald wave" class="transition" />
+        <div class="column"><button id="btn2" class="butts">2</button></div>
+        <div class="column"><button id="btn3" class="butts">3</button></div>
+        <div class="column"><button id="btn4" class="butts">4</button></div>
+        <div class="column"><button id="btn5" class="butts">5</button></div>
+    </div>
+    <img src="/img/wave1.svg" alt="bald wave" class="transition" />
 
-        <div class="buttonWrapper">
-            <div class="sideButtons">
-                <button id="randombtn">Generate Random Story</button>
-                <button id="speak">Speak the value of var textToSpeak</button>
-                <button id="clearbtn">Clear</button>
-            </div>
+    <div class="buttonWrapper">
+        <div class="sideButtons">
+            <button id="randombtn">Generate Random Story</button>
+            <button id="speak">Speak the value of var textToSpeak</button>
+            <button id="clearbtn">Clear</button>
+        </div>
+        <div class="story">
             <p id="storyOutput"></p>
         </div>
+    </div>
 
-        <script src="js/app.js"></script>
-    </body>
+    <script src="js/app.js"></script>
+</body>
+
 </html>

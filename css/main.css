@@ -1,4 +1,10 @@
+/* 
+Jenna Deamer - 200529678
+Daniel Yevtushenko - 200528781 
+*/
+
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap');
 /* Assignment 1 | COMP1073 Client-Side JavaScript
 * {
     border: 1px solid red;
@@ -18,7 +24,6 @@ body {
     height: 100%;
     justify-items: center;
     align-items: center;
-    border-right: 4px solid #d8d15f;
 }
 
 .transition {
@@ -58,13 +63,17 @@ button {
 
 /* Style for the circular buttons */
 .butts {
-    width: 7vw;
-    height: 7vw;
-    font-size: 1.3em;
+    transition: .2s;
+    width: 50%;
+    height: 70%;
+    font-size: 4em;
+    font-family: 'Bagel Fat One', cursive;
     border: 0.25em solid white;
     border-radius: 50%;
     margin: 10px;
 }
+
+
 
 /* styles for bottom buttons and story text */
 .buttonWrapper {
@@ -78,6 +87,12 @@ button {
     padding-left: 3em;
 }
 
+.story {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 p {
     width: 80%;
     margin: 0 auto;
@@ -85,11 +100,20 @@ p {
 }
 
 #storyOutput {
-    font-size: 2em;
+    font-size: 5em;
 }
+
 #btn1 {
     background-color: #a163a2;
 }
+/* #btn1:hover {
+    background-color: yellow;
+    transition: ease-in-out 0.2s;
+    width: 3.5em;
+    height: 3.5em;
+    font-size: 4.5em;
+    box-shadow: yellow 0px 0px  100px 0px;
+} */
 
 #btn2 {
     background-color: #3b9dca;
