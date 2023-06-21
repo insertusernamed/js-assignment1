@@ -1,6 +1,9 @@
 @charset "utf-8";
-/* Assignment 1 | COMP1073 Client-Side JavaScript */
-
+/* Assignment 1 | COMP1073 Client-Side JavaScript
+* {
+    border: 1px solid red;
+}
+*/
 body {
     display: flex;
     justify-content: center;
@@ -9,8 +12,25 @@ body {
     background-color: #01a3a4;
 }
 
+.column {
+    display: grid;
+    width: 20vw;
+    height: 100%;
+    justify-items: center;
+    align-items: center;
+    border-right: 4px solid #d8d15f;
+}
+
+.transition {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .wrapper {
-    height: 50vh;
+    height: 30vh;
     display: grid;
     grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
     justify-items: center;
@@ -26,12 +46,42 @@ body {
     border-bottom: 0.25em solid white;
 }
 
+/* Style for every button on the page */
 button {
     width: 10vw;
     height: 10vh;
     border-radius: 10px;
     border: solid 2px;
     margin: 1em;
+    font-size: 1.2vw;
+}
+
+/* Style for the circular buttons */
+.butts {
+    width: 7vw;
+    height: 7vw;
+    font-size: 1.3em;
+    border: 0.25em solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+/* styles for bottom buttons and story text */
+.buttonWrapper {
+    height: 270px;
+    width: 100%;
+}
+
+.sideButtons {
+    width: 20%;
+    float: left;
+    padding-left: 3em;
+}
+
+p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #storyOutput {
@@ -55,13 +105,4 @@ button {
 
 #btn5 {
     background-color: #ea78ab;
-}
-
-.butts {
-    width: 5em;
-    height: 5em;
-    font-size: 1.3em;
-    border: 0.25em solid white;
-    border-radius: 50%;
-    margin: 10px;
 }

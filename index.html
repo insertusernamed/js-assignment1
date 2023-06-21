@@ -10,18 +10,24 @@
 
     <body>
         <div class="wrapper">
-            <button id="btn1" class="butts">1</button>
-            <button id="btn2" class="butts">2</button>
-            <button id="btn3" class="butts">3</button>
-            <button id="btn4" class="butts">4</button>
-            <button id="btn5" class="butts">5</button>
+            <div class="column">
+                <button id="btn1" class="butts">1</button>
+            </div>
+            <div class="column"><button id="btn2" class="butts">2</button></div>
+            <div class="column"><button id="btn3" class="butts">3</button></div>
+            <div class="column"><button id="btn4" class="butts">4</button></div>
+            <div class="column"><button id="btn5" class="butts">5</button></div>
         </div>
-        <button id="randombtn">Generate Random Story</button>
-        <p id="storyOutput"></p>
+        <img src="/img/wave1.svg" alt="bald wave" class="transition" />
 
-        <button id="speak">Speak the value of var textToSpeak</button>
-
-        <button id="clearbtn">Clear</button>
+        <div class="buttonWrapper">
+            <div class="sideButtons">
+                <button id="randombtn">Generate Random Story</button>
+                <button id="speak">Speak the value of var textToSpeak</button>
+                <button id="clearbtn">Clear</button>
+            </div>
+            <p id="storyOutput"></p>
+        </div>
 
         <script src="js/app.js"></script>
     </body>
