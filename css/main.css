@@ -10,7 +10,20 @@ body {
 }
 
 .wrapper {
-    margin-top: 30vh;
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    justify-items: center;
+    align-items: center;
+    background: linear-gradient(
+        90deg,
+        rgba(161, 99, 162, 1) 0%,
+        rgba(59, 157, 202, 1) 25%,
+        rgba(133, 160, 83, 1) 50%,
+        rgba(226, 140, 65, 1) 75%,
+        rgba(234, 120, 171, 1) 100%
+    );
+    border-bottom: 0.25em solid white;
 }
 
 button {
@@ -21,9 +34,8 @@ button {
     margin: 1em;
 }
 
-#storyOutput{
+#storyOutput {
     font-size: 2em;
-    
 }
 #btn1 {
     background-color: #a163a2;
@@ -45,3 +57,11 @@ button {
     background-color: #ea78ab;
 }
 
+.butts {
+    width: 5em;
+    height: 5em;
+    font-size: 1.3em;
+    border: 0.25em solid white;
+    border-radius: 50%;
+    margin: 10px;
+}
